@@ -6,31 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadiya: portfolio</title>
     <style>
-        .my-col{
-            width: 50%; 
+        body{
+            color: #1c1c1c;
+        }
+        .text-primary{
+            color: rgb(184, 135, 2);
+        }
+        
+        .text-whtie{
+            color: #FFF;
+        }
+        .text-gray{
+            color: lightgray;
+        }
+        .btn{
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn-danger{
+            background: red;
+        }
+        .row{
+            display: inline-block;
+        }
+        .col-2{
+            max-width: 50%;
             float: left;
         }
-        .text-red{
-            color: red;
+        .col-4{
+            max-width: 33.33333333333%;
+            float: left;
+        }
+        img{
+            width: 100%;
+        }
+        .card-icon{
+            width: 100px;
+            height: 100px;
+        }
+        .blog-header{
+            font-weight: 700;
+        }
+        .footer{
+            text-align: center;
+            background-color: #000;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .footer-text{
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div>
-        <div class="my-col"> 
-            <h1>Stay Focused On</h1>
-            <h2 class="text-red">Mission 2022</h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 
-            </p>
-            <button>Explore Now </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"> 
+                <h1>Stay Focused On</h1>
+                <h1>Mission <span class="text-primary">2022</span></h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 
+                </p>
+                <button class="btn btn-danger text-whtie">Read the documentation</button>
+            </div>
+            <div class="col-2">
+                <img src="images/images-squar.jpg" style="width: 250px; border-radius: 50%;"/>
+            </div>
         </div>
-        <div class="my-col">
-            <img src="images-squar.jpg" style="border-radius: 50%;"/>
+        <div class="row">
+            <h1>My mission 2022</h1>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="images/illustrator-1.png" alt="icon one">
+                    </div>
+                    <h3 class="card-header">Mission</h3>
+                    <P class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </P>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="images/illustrator-2.png" alt="icon one">
+                    </div>
+                    <h3 class="card-header">Mission</h3>
+                    <P class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </P>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="images/illustrator-3.png" alt="icon one">
+                    </div>
+                    <h3 class="card-header">Mission</h3>
+                    <P class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </P>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="left-img-blog">
+                <div class="col-2">
+                    <img src="images/project.png" alt="" style="margin-right: 20px; width: 250px;">
+                </div>
+                <div class="col-2">
+                    <h2 class="blog-header">Develop without limit</h2>
+                    <P class="blog-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </P>
+                    <button class="btn btn-danger text-whtie">Read the documentation</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="right-img-blog">
+                <div class="col-2">
+                    <h2 class="blog-header">Know our global community</h2>
+                    <P class="blog-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </P>
+                    <button class="btn btn-danger text-whtie">Read the documentation</button>
+                </div>
+                <div class="col-2">
+                    <img src="images/project.png" alt="" style="margin-left: 20px; width: 250px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h1 class="footer-text text-whtie">Mission <span class="text-primary">2022</span></h1>
+            <p class="text-whtie">footer text</p>
         </div>
     </div>
-    <h> 
-        <title> Mission 2022</title>
-    </h>
+    
 </body>
 </html>
